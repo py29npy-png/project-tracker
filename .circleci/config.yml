@@ -1,0 +1,31 @@
+version: 2.1
+
+jobs:
+  verify:
+    docker:
+      - image: cimg/node:22.14
+    working_directory: ~/project
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - npm-v1-{{ checksum "package.json" }}
+            - npm-v1-
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          key: npm-v1-{{ checksum "package.json" }}
+          paths:
+            - ~/.npm
+      - run:
+          name: Typecheck
+          command: npm run typecheck
+      - run:
+          name: Build
+          command: npm run build
+
+workflows:
+  verify:
+    jobs:
+      - verify

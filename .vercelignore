@@ -1,0 +1,6 @@
+.next
+.project-tracker-data
+dev-server*.log
+dev-server.pid
+node_modules
+*.tsbuildinfo

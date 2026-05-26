@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Project Tracker">
+  <rect width="512" height="512" rx="112" fill="#0f172a"/>
+  <rect x="92" y="132" width="328" height="248" rx="24" fill="#ffffff"/>
+  <rect x="126" y="178" width="86" height="28" rx="8" fill="#22c55e"/>
+  <rect x="232" y="178" width="148" height="28" rx="8" fill="#38bdf8"/>
+  <rect x="126" y="242" width="184" height="28" rx="8" fill="#f59e0b"/>
+  <rect x="126" y="306" width="248" height="28" rx="8" fill="#6366f1"/>
+</svg>
